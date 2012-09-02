@@ -16,7 +16,7 @@ function($, _, Backbone, Handlebars, Bootstrap) {
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/"
+    root: "/player/"
   };
 
   // Localize or create a new JavaScript Template object.

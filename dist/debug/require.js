@@ -19645,7 +19645,9 @@ function(app, Backbone) {
     afterRender: function(){
       var file = this.model.get('files');
       if(typeof file !== "undefined"){
-        if(this.audio.canPlayType('audio/mpeg') !== "no"){
+        mpegable = this.audio.canPlayType('audio/mpeg');
+        console.log('mp3 support = ' + mpegable + '(' + !!mpegable + ')');
+        if( mpegable && mpegable !== "no" && mpegable !== ""){
           this.audio.src = file.mp3.src;  
         } else {
           this.audio.src = file.ogg.src;  
