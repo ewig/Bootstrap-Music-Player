@@ -1,0 +1,13 @@
+<h6>Current Album</h6>
+{{#if album}}
+	<img src="{{cover}}" alt="" class="img-rounded" width="270" height="270">
+	<h4>{{album}}</h4>
+	<h5>by {{artist}}</h5>
+	<ol>
+		{{#each songs}}
+			<li><a href="{{../id}}/{{id}}">{{title}}</a></li>
+		{{/each}}
+	</ol>
+{{else}}
+<p>Select an album</p>
+{{/if}}

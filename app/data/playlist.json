@@ -1,0 +1,191 @@
+{
+	"albums": [
+		{
+			"artist": "Gates",
+			"album": "The Sun Will Rise And Lead Me Home",
+			"cover": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/the%20sun%20will%20rise%20and%20lead%20me%20home%20(small).jpg",
+			"id": "the-sun-will-rise-and-lead-me-home",
+			"songs": [
+			{
+				"title": "A Vague Ambition",
+				"id": "a-vague-amibtion",
+				"track": 1,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.ogg"
+
+				}
+			},{
+				"title": "Walls",
+				"id": "walls",
+				"track": 2,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.ogg"
+				}
+			},{
+				"title": "Burned Us Alive",
+				"id": "burned-us-alive",
+				"track": 3,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.ogg"
+				}
+			},{
+				"title": "In The Morning",
+				"id": "in-the-morning",
+				"track": 4,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.ogg"
+				}
+			},{
+				"title": "At The End Of All Things",
+				"id": "at-the-end-of-all-things",
+				"track": 5,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.ogg"
+				}
+			},{
+				"title": "Sleepwalker",
+				"id": "sleepwalker",
+				"track": 6,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.ogg"
+				}	
+			}]
+		},
+		{
+			"artist": "Gates",
+			"album": "You Are All You Have Left To Fear",
+			"cover": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/you%20are%20all%20you%20have%20left%20to%20fear%20(small).jpg",
+			"id": "you-are-all-you-have-left-to-fear",
+			"songs": [
+			{
+				"title": "They Only See Shadows",
+				"id": "they-only-see-shadows",
+				"track": 1,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.ogg"
+				}
+			},{
+				"title": "Like This You Mean",
+				"id": "like-this-you-mean",
+				"track": 2,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.ogg"
+				}
+			},{
+				"title": "Cast In The Pattern",
+				"id": "cast-in-the-pattern",
+				"track": 3,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.ogg"
+				}
+			},{
+				"title": "To Those Who Fell...",
+				"id": "to-those-who-fell",
+				"track": 4,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.ogg"
+				}
+			},{
+				"title": "...And To Those Who Carry On",
+				"id": "and-to-those-who-carry-on",
+				"track": 5,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.ogg"
+				}
+			},{
+				"title": "The Sound Of Letting Go",
+				"id": "the-sound-of-letting-go",
+				"track": 6,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.ogg"
+				}	
+			}]
+		},{
+			"artist": "Straylight Run",
+			"album": "Internet Demos",
+			"cover": "http://dl.dropbox.com/u/3743457/straylight%20run/original%20internet%20demos%20(small).jpg",
+			"id": "straylight-run-internet-demos",
+			"songs": [
+			{
+				"title": "Mistakes We Knew We Were Making",
+				"id": "mistakes-we-knew-we-were-making",
+				"track": 1,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.ogg"
+				}
+			},{
+				"title": "Existentialism On Prom Night",
+				"id": "existentialism-on-prom-nigh",
+				"track": 2,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.ogg"
+				}
+			},{
+				"title": "It's For The Best",
+				"id": "it-s-for-the-best",
+				"track": 3,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.ogg"
+				}
+			},{
+				"title": "A Slow Descent",
+				"id": "a-slow-descent",
+				"track": 4,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.ogg"
+				}
+			},{
+				"title": "The Tension And The Terror",
+				"id": "the-tension-and-the-terror",
+				"track": 5,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.ogg"
+				}
+			},{
+				"title": "It's Everybody's Fault But Mine",
+				"id": "it-s-everybody-s-fault-but-mine",
+				"track": 6,
+				"files": {
+					"extension": "ogg",
+					"type": "audio/ogg",
+					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.ogg"
+				}	
+			}]
+		}
+
+	]
+}

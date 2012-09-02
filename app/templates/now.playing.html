@@ -1,0 +1,19 @@
+<h6>Now Playing</h6>
+{{#if title}}
+	<div class="well">
+		<h2>{{title}}</h2>
+		<div class="progress progress-striped">
+	  		<div class="bar" style="width: 0%;"></div>
+		</div>
+		<div class="time">
+			<span class="time-elapsed">0:00</span> / <span class="time-total">0:00</span>
+		</div>
+		<div class="controls">
+			<div class="btn-group">
+				<button class="btn btn-loading"><i class="icon-refresh spin"></i></button>
+				<button class="btn btn-back"><i class="icon-step-backward"></i></button>
+				<button class="btn btn-next"><i class="icon-step-forward"></i></button>
+			</div>
+		</div>
+	</div>
+{{/if}}
