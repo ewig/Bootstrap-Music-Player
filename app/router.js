@@ -28,12 +28,16 @@ function(app, Player, DevNotes, Playlist) {
     },
 
     album: function(albumId) {
-      this.albums.reset(Playlist.albums);
+      if(!this.albums.length){
+        this.albums.reset(Playlist.albums);
+      }
       this.album.set(this.albums.get(albumId));
     },
 
     song: function(albumId, songId){
-      this.albums.reset(Playlist.albums);
+      if(!this.albums.length){
+        this.albums.reset(Playlist.albums);
+      }
       this.album.set(this.albums.get(albumId));
       this.songs.reset(this.album.get('songs'));
       this.song.set(this.songs.get(songId));
