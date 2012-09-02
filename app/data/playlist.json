@@ -11,55 +11,85 @@
 				"id": "a-vague-amibtion",
 				"track": 1,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.ogg"
-
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.mp3"
+					}
 				}
 			},{
 				"title": "Walls",
 				"id": "walls",
 				"track": 2,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.ogg"	
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.mp3"
+					}
+					
 				}
 			},{
 				"title": "Burned Us Alive",
 				"id": "burned-us-alive",
 				"track": 3,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.mp3"
+					}
 				}
 			},{
 				"title": "In The Morning",
 				"id": "in-the-morning",
 				"track": 4,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.mp3"
+					}
 				}
 			},{
 				"title": "At The End Of All Things",
 				"id": "at-the-end-of-all-things",
 				"track": 5,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.mp3"	
+					}
 				}
 			},{
 				"title": "Sleepwalker",
 				"id": "sleepwalker",
 				"track": 6,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.mp3"
+					}
 				}	
 			}]
 		},
@@ -74,54 +104,84 @@
 				"id": "they-only-see-shadows",
 				"track": 1,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.mp3"
+					}
 				}
 			},{
 				"title": "Like This You Mean",
 				"id": "like-this-you-mean",
 				"track": 2,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.mp3"
+					}
 				}
 			},{
 				"title": "Cast In The Pattern",
 				"id": "cast-in-the-pattern",
 				"track": 3,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.mp3"
+					}
 				}
 			},{
 				"title": "To Those Who Fell...",
 				"id": "to-those-who-fell",
 				"track": 4,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.mp3"
+					}
 				}
 			},{
 				"title": "...And To Those Who Carry On",
 				"id": "and-to-those-who-carry-on",
 				"track": 5,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.mp3"
+					}
 				}
 			},{
 				"title": "The Sound Of Letting Go",
 				"id": "the-sound-of-letting-go",
 				"track": 6,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.mp3"
+					}
 				}	
 			}]
 		},{
@@ -135,54 +195,84 @@
 				"id": "mistakes-we-knew-we-were-making",
 				"track": 1,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.mp3"
+					}
 				}
 			},{
 				"title": "Existentialism On Prom Night",
 				"id": "existentialism-on-prom-nigh",
 				"track": 2,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.mp3"
+					}
 				}
 			},{
 				"title": "It's For The Best",
 				"id": "it-s-for-the-best",
 				"track": 3,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.ogg"
+					},
+					"m3p": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.mp3"
+					}
 				}
 			},{
 				"title": "A Slow Descent",
 				"id": "a-slow-descent",
 				"track": 4,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.mp3"
+					}
 				}
 			},{
 				"title": "The Tension And The Terror",
 				"id": "the-tension-and-the-terror",
 				"track": 5,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.mp3"
+					}
 				}
 			},{
 				"title": "It's Everybody's Fault But Mine",
 				"id": "it-s-everybody-s-fault-but-mine",
 				"track": 6,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.mp3"
+					}
 				}	
 			}]
 		}

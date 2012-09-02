@@ -3,6 +3,10 @@
 .albums .thumbnail {
 	margin-bottom: 9px;
 }
+.playlist img {
+  height: 270px;
+  width: 270px;
+}
 .footer {
   padding: 40px 20px;
 }

@@ -351,7 +351,7 @@ this['JST']['app/templates/dev.notes.html'] = function (Handlebars,depth0,helper
   
 
 
-  return "<div class=\"modal hide fade\" id=\"notesModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"notesModalLabel\" aria-hidden=\"true\">\n	<div class=\"modal-header\">\n		<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>\n		<h3 id=\"notesModalLabel\">Developer Notes</h3>\n	</div>\n	<div class=\"modal-body\">\n		<h3>Hi, guys.</h3>\n		<p>Here's a quick mp3 (technically, ogg) player based on backbone.js. Here are a few of the decisions I made and why I made them. I was told not to spend more than four hours on it. Truthfully, I spent a little more than that on account of trying a few new tools I hadn't used before and getting the build process tweaked for posting to github-hosted pages.</p>\n		<p><strong>Backbone Boilerplate</strong><br>The quickest way I know of to get a solid modular backbone.js project up and running is Backbone Boilerplate. A few taps on the command line and you've got the scaffolding set up for a project. I have to admit that a good bit of the early time I spent on this was wasted by trying to use some of the newer Backbone Layout Manager techniques without having updated the code to the latest version. Once that was updated, it was simply a matter of creating the modules necessary for the app.</p>\n		<p><strong>Twitter Bootstrap</strong><br>Since time was of the essence and because I'm not the prettiest drawer, I used the Twitter Bootstrap library to round the corners and set up the grid. It does leave it a bit generic looking, but it is clean and reflects my general style choices.</p>\n		<p><strong>HTML5 Audio</strong><br>I gave HTML5 audio a shot for one big reason... this is a new laptop and I don't have flash installed. It's a fairly simple API, compared to some of the new browser APIs, but I did have to convert the music to OGG format in order to get something working on both Chrome and Firefox. If you look at the data structure, you'll see I initially planned to have an mp3 fallback for browsers that don't support OGG, and a flash fallback for browsers that don't support the new HTML5 Audio tag, but I tried to keep the total time on the project as close to the allotted 4 hours as I could.</p>\n		<p><strong>Performance / Class Warfare</strong><br>If you look at the code, you'll notice I used all classes. Even in the cases where an ID would have been much more performant. I did this for one reason: because I initially was going to try to make the player modular enough that you could drop two on the same page. I eventually realized that I didn't have the time for that. When I usually release things, I have a run through Chrome's CSS Selector Audits and try and nail down the costly ones. I also used a number of views. Views can get a little expensive, but make it so much easier to pass data around. There have been times where the best bet for me was to have thirty views on a page. Although I only used four here. (This popup is one of them.)</p>\n		<p><strong>PushState: False</strong><br>Up until I posted this on the server, I was using PushState: true. Sadly, the github servers that I host this site on wouldn't work with that. If you tried to refresh a deep-link, you would get a 404. I turned pushstate off to get those links working again. Rest assured that pushstate works.</p>\n		<p><strong>Url Scheme</strong><br>After I got about halfway through the project, I realized that I had picked a non-restful URL scheme. I went forward with it, but if I were spending any more time on this, I would definitely fix that first.</p>\n		<p><strong>Meta Data</strong><br>I made an initial attempt to load the raw data into an object in javascript and parse out the ID3 data, but realized that it wouldn't work unless the music files and the app were hosted on the same domain. I stored the files on dropbox, so that wouldn't work. I stored some meta data in the JSON and used that to display the album/cover/titles/artist. The current/total times are calculated entirely in javascript. With more time, I would have tried getting the files on the same domain and parseing that info out. It wouldn't be too hard to fall back to relying on Flash for that information if I wasn't able to parse.</p>\n		<p><strong>Modular</strong><br>I tried to separate everything nicely to be reusable. For the most part I'm happy with the way things went, though I'd take a huge swing at another chance to write the code that actually interacts with the browser's Audio API. That could have been abstracted a little better.</p>\n		<p><strong>CSS3</strong><br>I didn't make huge use of CSS3, but the spinning loading indicator on the play button and the animated progress bar are CSS3.</p>\n		<p><strong>Features</strong><br>Maybe that's too strong of a word for what these are...</p>\n		<dl>\n			<dt>Play/Pause</dt>\n			<dd>Like a boss.</dd>\n			<dt>Back/Next</dt>\n			<dd>You can also loop around from front->back and back->front</dd>\n			<dt>Scrubbing</dt>\n			<dd>Click anywhere on the progress indicator.</dd>\n			<dt>Autoplay</dt>\n			<dd>It will automatically start the next track when a song finishes.</dd>\n			<dt>Browsing</dt>\n			<dd>You can look through the other albums while you're playing.</dd>\n			<dt>G.o.o.d. Music</dt>\n			<dd>Gates is my favorite new band. New Jersey exports one good thing... music. These early Straylight Run demos may not sound special, but they blew my 18 year old mind. When they were posted in 2003, it was the first time I had heard a 'real' band posting free music on their website to get interest/buzz.</dd>\n		</dl>\n		<p>Let me know if you have any questions/comments/concerns!</p>\n		<div><h3>Thanks,</h3><p><a href=\"mailto:johnmegahan@gmail.com\">Johnny Megahan</a></p></div>\n	</div>\n	<div class=\"modal-footer\">\n		<button class=\"btn\" data-dismiss=\"modal\" aria-hidden=\"true\">Close</button>\n	</div>\n</div>";}
+  return "<div class=\"modal hide fade\" id=\"notesModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"notesModalLabel\" aria-hidden=\"true\">\n	<div class=\"modal-header\">\n		<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>\n		<h3 id=\"notesModalLabel\">Developer Notes</h3>\n	</div>\n	<div class=\"modal-body\">\n		<h3>Hi, guys.</h3>\n		<p>Here's a quick mp3/ogg player based on backbone.js. Here are a few of the decisions I made and why I made them. I was told not to spend more than four hours on it. Truthfully, I spent a little more than that on account of trying a few new tools I hadn't used before and getting the build process tweaked for posting to github-hosted pages.</p>\n		<p><strong>Backbone Boilerplate</strong><br>The quickest way I know of to get a solid modular backbone.js project up and running is Backbone Boilerplate. A few taps on the command line and you've got the scaffolding set up for a project. I have to admit that a good bit of the early time I spent on this was wasted by trying to use some of the newer Backbone Layout Manager techniques without having updated the code to the latest version. Once that was updated, it was simply a matter of creating the modules necessary for the app.</p>\n		<p><strong>Twitter Bootstrap</strong><br>Since time was of the essence and because I'm not the prettiest drawer, I used the Twitter Bootstrap library to round the corners and set up the grid. It does leave it a bit generic looking, but it is clean and reflects my general style choices.</p>\n		<p><strong>HTML5 Audio</strong><br>I gave HTML5 audio a shot for one big reason... this is a new laptop and I don't have flash installed. It's a fairly simple API, compared to some of the new browser APIs. Anything that can play mp3 will go for it, but I did have to convert the music to OGG format in order to get something working on Safari, Chrome and Firefox. If you look at the data structure, you'll see I initially planned to have a flash fallback for browsers that don't support the new HTML5 Audio tag, but I tried to keep the total time on the project as close to the allotted 4 hours as I could.</p>\n		<p><strong>Performance / Class Warfare</strong><br>If you look at the code, you'll notice I used all classes. Even in the cases where an ID would have been much more performant. I did this for one reason: because I initially was going to try to make the player modular enough that you could drop two on the same page. I eventually realized that I didn't have the time for that. When I usually release things, I have a run through Chrome's CSS Selector Audits and try and nail down the costly ones. I also used a number of views. Views can get a little expensive, but make it so much easier to pass data around. There have been times where the best bet for me was to have thirty views on a page. Although I only used four here. (This popup is one of them.)</p>\n		<p><strong>PushState: False</strong><br>Up until I posted this on the server, I was using PushState: true. Sadly, the github servers that I host this site on wouldn't work with that. If you tried to refresh a deep-link, you would get a 404. I turned pushstate off to get those links working again. Rest assured that pushstate works.</p>\n		<p><strong>Url Scheme</strong><br>After I got about halfway through the project, I realized that I had picked a non-restful URL scheme. I went forward with it, but if I were spending any more time on this, I would definitely fix that first.</p>\n		<p><strong>Meta Data</strong><br>I made an initial attempt to load the raw data into an object in javascript and parse out the ID3 data, but realized that it wouldn't work unless the music files and the app were hosted on the same domain. I stored the files on dropbox, so that wouldn't work. I stored some meta data in the JSON and used that to display the album/cover/titles/artist. The current/total times are calculated entirely in javascript. With more time, I would have tried getting the files on the same domain and parseing that info out. It wouldn't be too hard to fall back to relying on Flash for that information if I wasn't able to parse.</p>\n		<p><strong>Modular</strong><br>I tried to separate everything nicely to be reusable. For the most part I'm happy with the way things went, though I'd take a huge swing at another chance to write the code that actually interacts with the browser's Audio API. That could have been abstracted a little better.</p>\n		<p><strong>CSS3</strong><br>I didn't make huge use of CSS3, but the spinning loading indicator on the play button and the animated progress bar are CSS3.</p>\n		<p><strong>Features</strong><br>Maybe that's too strong of a word for what these are...</p>\n		<dl>\n			<dt>Play/Pause</dt>\n			<dd>Like a boss.</dd>\n			<dt>Back/Next</dt>\n			<dd>You can also loop around from front->back and back->front</dd>\n			<dt>Scrubbing</dt>\n			<dd>Click anywhere on the progress indicator.</dd>\n			<dt>Autoplay</dt>\n			<dd>It will automatically start the next track when a song finishes.</dd>\n			<dt>Browsing</dt>\n			<dd>You can look through the other albums while you're playing.</dd>\n			<dt>G.o.o.d. Music</dt>\n			<dd>Gates is my favorite new band. New Jersey exports one good thing... music. These early Straylight Run demos may not sound special, but they blew my 18 year old mind. When they were posted in 2003, it was the first time I had heard a 'real' band posting free music on their website to get interest/buzz.</dd>\n		</dl>\n		<p>Let me know if you have any questions/comments/concerns!</p>\n		<div><h3>Thanks,</h3><p><a href=\"mailto:johnmegahan@gmail.com\">Johnny Megahan</a></p></div>\n	</div>\n	<div class=\"modal-footer\">\n		<button class=\"btn\" data-dismiss=\"modal\" aria-hidden=\"true\">Close</button>\n	</div>\n</div>";}
 
 this['JST']['app/templates/layouts/main.html'] = function (Handlebars,depth0,helpers,partials,data) {
   helpers = helpers || Handlebars.helpers;
@@ -19512,7 +19512,7 @@ function($, _, Backbone, Handlebars, Bootstrap) {
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/"
+    root: "/player/"
   };
 
   // Localize or create a new JavaScript Template object.
@@ -19645,7 +19645,11 @@ function(app, Backbone) {
     afterRender: function(){
       var file = this.model.get('files');
       if(typeof file !== "undefined"){
-        this.audio.src = file.src;
+        if(this.audio.canPlayType('audio/mpeg') !== "no"){
+          this.audio.src = file.mp3.src;  
+        } else {
+          this.audio.src = file.ogg.src;  
+        }
         this.audio.load();
       }
     },
@@ -20151,55 +20155,85 @@ define("json!data/playlist.json", function(){ return {
 				"id": "a-vague-amibtion",
 				"track": 1,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.ogg"
-
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/01%20A%20Vague%20Ambition.mp3"
+					}
 				}
 			},{
 				"title": "Walls",
 				"id": "walls",
 				"track": 2,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.ogg"	
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/02%20Walls.mp3"
+					}
+					
 				}
 			},{
 				"title": "Burned Us Alive",
 				"id": "burned-us-alive",
 				"track": 3,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/03%20Burned%20Us%20Alive.mp3"
+					}
 				}
 			},{
 				"title": "In The Morning",
 				"id": "in-the-morning",
 				"track": 4,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/04%20In%20The%20Morning.mp3"
+					}
 				}
 			},{
 				"title": "At The End Of All Things",
 				"id": "at-the-end-of-all-things",
 				"track": 5,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/05%20At%20The%20End%20of%20All%20Things.mp3"	
+					}
 				}
 			},{
 				"title": "Sleepwalker",
 				"id": "sleepwalker",
 				"track": 6,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/the%20sun%20will%20rise%20and%20lead%20me%20home/06%20Sleepwalker.mp3"
+					}
 				}	
 			}]
 		},
@@ -20214,54 +20248,84 @@ define("json!data/playlist.json", function(){ return {
 				"id": "they-only-see-shadows",
 				"track": 1,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/01%20They%20See%20Only%20Shadows.mp3"
+					}
 				}
 			},{
 				"title": "Like This You Mean",
 				"id": "like-this-you-mean",
 				"track": 2,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/02%20Like%20This%20You%20Mean.mp3"
+					}
 				}
 			},{
 				"title": "Cast In The Pattern",
 				"id": "cast-in-the-pattern",
 				"track": 3,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/03%20Cast%20in%20the%20Pattern.mp3"
+					}
 				}
 			},{
 				"title": "To Those Who Fell...",
 				"id": "to-those-who-fell",
 				"track": 4,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/04%20To%20Those%20Who%20Fell.mp3"
+					}
 				}
 			},{
 				"title": "...And To Those Who Carry On",
 				"id": "and-to-those-who-carry-on",
 				"track": 5,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/05%20...And%20To%20Those%20Who%20Carry%20On.mp3"
+					}
 				}
 			},{
 				"title": "The Sound Of Letting Go",
 				"id": "the-sound-of-letting-go",
 				"track": 6,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/gates/you%20are%20all%20you%20have%20left%20to%20fear/06%20The%20Sound%20of%20Letting%20Go.mp3"
+					}
 				}	
 			}]
 		},{
@@ -20275,54 +20339,84 @@ define("json!data/playlist.json", function(){ return {
 				"id": "mistakes-we-knew-we-were-making",
 				"track": 1,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/01%20Mistakes%20We%20Knew%20We%20Were%20Making.mp3"
+					}
 				}
 			},{
 				"title": "Existentialism On Prom Night",
 				"id": "existentialism-on-prom-nigh",
 				"track": 2,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/02%20Existentialism%20on%20Prom%20Night.mp3"
+					}
 				}
 			},{
 				"title": "It's For The Best",
 				"id": "it-s-for-the-best",
 				"track": 3,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.ogg"
+					},
+					"m3p": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/03%20It's%20For%20the%20Best.mp3"
+					}
 				}
 			},{
 				"title": "A Slow Descent",
 				"id": "a-slow-descent",
 				"track": 4,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/04%20A%20Slow%20Descent.mp3"
+					}
 				}
 			},{
 				"title": "The Tension And The Terror",
 				"id": "the-tension-and-the-terror",
 				"track": 5,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/05%20The%20Tension%20and%20The%20Terror.mp3"
+					}
 				}
 			},{
 				"title": "It's Everybody's Fault But Mine",
 				"id": "it-s-everybody-s-fault-but-mine",
 				"track": 6,
 				"files": {
-					"extension": "ogg",
-					"type": "audio/ogg",
-					"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.ogg"
+					"ogg": {
+						"type": "audio/ogg",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.ogg"
+					},
+					"mp3": {
+						"type": "audio/mp3",
+						"src": "http://dl.dropbox.com/u/3743457/straylight%20run/06%20It's%20Everybody's%20Fault%20But%20Mine.mp3"
+					}
 				}	
 			}]
 		}

@@ -53,7 +53,11 @@ function(app, Backbone) {
     afterRender: function(){
       var file = this.model.get('files');
       if(typeof file !== "undefined"){
-        this.audio.src = file.src;
+        if(this.audio.canPlayType('audio/mpeg') !== "no"){
+          this.audio.src = file.mp3.src;  
+        } else {
+          this.audio.src = file.ogg.src;  
+        }
         this.audio.load();
       }
     },
